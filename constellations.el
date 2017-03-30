@@ -27,7 +27,7 @@
 
 ;;; Code:
 
-(defvar constellation-names '(("Andromeda"           . "And")
+(defvar constellations-names '(("Andromeda"           . "And")
                               ("Antlia"              . "Ant")
                               ("Apus"                . "Aps")
                               ("Aquarius"            . "Aqr")
@@ -118,11 +118,11 @@
   "List of constellations and their abbreviations.")
 
 ;;;###autoload
-(defun constellation-insert-abbr (name)
+(defun constellations-insert-abbr (name)
   "Given constellation name NAME, insert its abbreviation."
-  (interactive (list (completing-read "Name: " constellation-names)))
+  (interactive (list (completing-read "Name: " constellations-names)))
   (when name
-    (let ((const (assoc name constellation-names)))
+    (let ((const (assoc name constellations-names)))
       (when const
         (insert (cdr const))))))
 
