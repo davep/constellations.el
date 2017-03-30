@@ -128,4 +128,4 @@
 
 (provide 'constellations)
 
-;;; constellations.el ends here.
+;;; constellations.el ends here
