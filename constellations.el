@@ -1,6 +1,10 @@
 ;;; constellations.el --- Constellation tools.
-;; Copyright 2005 by Dave Pearson <davep@davep.org>
-;; $Revision: 1.2 $
+;; Copyright 2005-2017 by Dave Pearson <davep@davep.org>
+
+;; Author: Dave Pearson <davep@davep.org>
+;; Version: 1.2
+;; Keywords: convenience, astronomy
+;; URL: https://github.com/davep/constellations.el
 
 ;; constellations.el is free software distributed under the terms of the GNU
 ;; General Public Licence, version 2. For details see the file COPYING.
@@ -8,23 +12,13 @@
 ;;; Commentary:
 ;;
 ;; constellations.el provides a constellation abbreviation lookup tool. I
-;; can never remember the abbreviations for most constellations so, when I'm
-;; writing my observing logs (http://www.davep.org/astronomy/logs/) I find
-;; this little tool handy -- saves me from having to remember.
+;; can never remember the abbreviations for most constellations so, when I
+;; was writing my observing logs (http://www.astronomer.me.uk/logs/) I found
+;; this little tool handy -- saved me from having to remember.
 ;;
 ;; The latest constellations.el is always available from:
 ;;
-;;   <URL:http://www.davep.org/emacs/#constellations.el>
-
-;;; INSTALLATION:
-;;
-;; o Drop constellations.el somwehere into your `load-path'. Try your
-;;   site-lisp directory for example (you might also want to byte-compile the
-;;   file).
-;;
-;; o Add the following autoload statement to your ~/.emacs file:
-;;
-;;   (autoload 'constellation-insert-abbr "constellations" "Insert constellation abbreviation from name." t)
+;;   <URL:https://github.com/davep/constellations.el>
 
 ;;; TODO:
 ;;
