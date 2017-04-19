@@ -20,11 +20,6 @@
 ;;
 ;;   <URL:https://github.com/davep/constellations.el>
 
-;;; TODO:
-;;
-;; All sorts of extra stuff could be added. The first obvious tool would be
-;; a method of going the other way (abbreviation to name).
-
 ;;; Code:
 
 (defvar constellations-names '(("Andromeda"           . "And")
@@ -123,6 +118,17 @@
   (interactive (list (completing-read "Name: " constellations-names)))
   (when name
     (let ((const (assoc name constellations-names)))
+      (when const
+        (insert (cdr const))))))
+
+;;;###autoload
+(defun constellations-insert-name (abbr)
+  "Given constellation abbreviation ABBR, insert its name."
+  (interactive (list (completing-read "Abbreviation: " (mapcar #'cdr constellations-names))))
+  (when abbr
+    (let ((const (assoc abbr (mapcar #'(lambda (const)
+                                         (cons (cdr const) (car const)))
+                                     constellations-names))))
       (when const
         (insert (cdr const))))))
 

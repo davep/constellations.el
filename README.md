@@ -11,8 +11,3 @@ The latest `constellations.el` is always available from:
 
   <URL:https://github.com/davep/constellations.el>
 
-## TODO:
-
-All sorts of extra stuff could be added. The first obvious tool would be a
-method of going the other way (abbreviation to name).
-
